@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f75ed970-aeef-4e4e-9cd6-3e15e4451b96" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script/main.js" afterPath="$PROJECT_DIR$/src/script/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -68,10 +69,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="279" selection-end="279" vertical-scroll-proportion="0.12889366" vertical-offset="90" max-vertical-offset="1380">
+            <state line="14" column="39" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -86,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="28" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="870">
+            <state line="43" column="30" selection-start="890" selection-end="890" vertical-scroll-proportion="0.570011" vertical-offset="128" max-vertical-offset="1035">
               <folding />
             </state>
           </provider>
@@ -115,9 +116,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/script/hello.js" />
         <option value="$PROJECT_DIR$/src/script/main-without-jsx.js" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/script/main.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
@@ -335,12 +336,12 @@
       <updated>1394127547336</updated>
       <workItem from="1394494534645" duration="3741000" />
       <workItem from="1394503124805" duration="682000" />
-      <workItem from="1394504347313" duration="367000" />
+      <workItem from="1394504347313" duration="926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4790000" />
+    <option name="totallyTimeSpent" value="5349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-5" width="1682" height="1056" extended-state="6" />
@@ -444,13 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="28" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="315">
@@ -460,7 +454,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="279" selection-end="279" vertical-scroll-proportion="0.12889366" vertical-offset="90" max-vertical-offset="1380">
+        <state line="14" column="39" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="30" selection-start="890" selection-end="890" vertical-scroll-proportion="0.570011" vertical-offset="128" max-vertical-offset="1035">
           <folding />
         </state>
       </provider>
