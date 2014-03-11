@@ -12,23 +12,16 @@ var GuessGame = React.createClass({
     getInitialState: function ()
     {
         return {
-            number: ((this.props.max + 1) * Math.random()) | 0,
+            number: 1 + (this.props.max * Math.random()) | 0,
             guess: ""
         }
     },
 
     handleChange: function(ev)
     {
-        var value = this.refs.input.getDOMNode().value;
-
-        var n = parseInt(value,10);
-
-        if (n === n)
-        {
-            this.setState({
-                guess: n
-            })
-        }
+        this.setState({
+            guess: this.refs.input.getDOMNode().value
+        });
     },
 
     render: function ()
@@ -39,9 +32,9 @@ var GuessGame = React.createClass({
         var message = "Enter number";
         var cls = null;
 
-        if (typeof guessed === "number")
+        if (guessed)
         {
-            var won = toGuess === guessed;
+            var won = toGuess == guessed;
 
             cls = won ? "win" : "fail";
 
@@ -51,11 +44,14 @@ var GuessGame = React.createClass({
             }
             else
             {
-                if (toGuess > guessed)
+                var n1 = +toGuess;
+                var n2 = +guessed;
+
+                if (n1 > n2)
                 {
                     message = "Larger";
                 }
-                else
+                else if (n1 < n2)
                 {
                     message = "Smaller"
                 }
@@ -74,7 +70,7 @@ var GuessGame = React.createClass({
                 <input ref="input"
                     type="text"
                     autofocus="autofocus"
-                    placeholder={ "Guess between 0 and " + this.props.max }
+                    placeholder={ "Guess between 1 and " + this.props.max }
                     onChange={this.handleChange}
                     defaultValue="" />
             </div>

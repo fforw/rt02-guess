@@ -1,5 +1,5 @@
 React Example 2: Guess Game
-==========
+===========================
 
 Simple one component number guessing game implemented in React.
 
