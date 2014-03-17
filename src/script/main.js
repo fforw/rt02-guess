@@ -3,6 +3,18 @@
 
 var React = require("react/addons");
 
+var Game = React.createClass({
+    render: function()
+    {
+        return (
+            <div className="game">
+                <h1>{ this.props.title }</h1>
+                { this.props.children }
+            </div>
+            );
+    }
+});
+
 var GuessGame = React.createClass({
 
     propTypes: {
@@ -59,29 +71,24 @@ var GuessGame = React.createClass({
         }
 
         return (
-            <div className="game">
-
-                <h1>Guess The Number!</h1>
+            <Game title="Guess The Number!">
 
                 <div className={ React.addons.classSet("msg", cls) }>
                     { message }
                 </div>
 
                 <input ref="input"
-                    type="text"
-                    autofocus="autofocus"
-                    placeholder={ "Guess between 1 and " + this.props.max }
-                    onChange={this.handleChange}
-                    defaultValue="" />
-            </div>
-        );
+                type="text"
+                autofocus="autofocus"
+                placeholder={ "Guess between 1 and " + this.props.max }
+                onChange={this.handleChange}
+                defaultValue="" />
+            </Game>
+            );
     }
 });
 
-
 React.renderComponent(
-
     <GuessGame  max ={100}/>,
-
     document.getElementById("container")
 );

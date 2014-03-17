@@ -4,6 +4,18 @@
 var React = require("react/addons");
 var ReactLink = require("react/lib/ReactLink");
 
+var Game = React.createClass({
+    render: function()
+    {
+        return (
+            <div className="game">
+                <h1>{ this.props.title }</h1>
+                { this.props.children }
+            </div>
+        );
+    }
+});
+
 var GuessGame = React.createClass({
 
     mixins: [ React.addons.LinkedStateMixin ],
@@ -55,9 +67,7 @@ var GuessGame = React.createClass({
         }
 
         return (
-            <div className="game">
-
-                <h1>Guess The Number!</h1>
+            <Game title="Guess The Number!">
 
                 <div className={ React.addons.classSet("msg", cls) }>
                     { message }
@@ -68,15 +78,12 @@ var GuessGame = React.createClass({
                     autofocus="autofocus"
                     placeholder={ "Guess between 1 and " + this.props.max }
                     valueLink={ this.linkState("guess") } />
-            </div>
+            </Game>
         );
     }
 });
 
-
 React.renderComponent(
-
     <GuessGame  max ={100}/>,
-
     document.getElementById("container")
 );
