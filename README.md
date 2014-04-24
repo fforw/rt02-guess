@@ -6,7 +6,7 @@ Simple one component number guessing game implemented in React.
 Prerequisites
 -------------
 
-You need nodejs ( http://nodejs.org/ ). Make sure to execute "npm update" to download all npm dependencies
+You need nodejs ( http://nodejs.org/ ). Make sure to execute "npm install" to download all npm dependencies
 after checking this out.
 
 Building
